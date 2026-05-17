@@ -1,0 +1,9 @@
+numpy>=1.21.0
+opencv-python>=4.5.0
+scipy>=1.7.0
+Pillow>=8.0.0
+fastapi>=0.100.0
+uvicorn>=0.23.2
+python-multipart>=0.0.6
+openai>=1.0.0
+requests>=2.31.0
