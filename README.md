@@ -6,128 +6,144 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![GitHub Stars](https://img.shields.io/github/stars/NingJiangXie/routeflow?style=social)](https://github.com/NingJiangXie/routeflow/stargazers)
 
+**English / 简体中文**
+
 *A modern AI-powered path planning platform with beautiful web interface*
 
 </div>
 
-## Features
+## ✨ Features | 功能特点
 
-### Path Planning Algorithms
+### 🎯 Path Planning Algorithms | 路径规划算法
 
-| Algorithm | Description |
-|-----------|-------------|
-| **D* Lite** | Real-time dynamic replanning for moving obstacles |
-| **RRT*** | Probabilistically optimal path planning |
-| **ACO** | Ant Colony Optimization |
+| Algorithm | Description | 说明 |
+|-----------|-------------|------|
+| **D* Lite** | Real-time dynamic replanning for moving obstacles | 移动障碍物的实时动态重规划 |
+| **RRT*** | Probabilistically optimal path planning | 概率最优路径规划 |
+| **ACO** | Ant Colony Optimization | 蚁群优化算法 |
 
-### Modern UI
+### 🎨 Modern UI | 现代化界面
 
-- 🌐 **Glass-morphism Design** - Beautiful frosted glass effects
-- 📊 **Real-time Visualization** - Watch paths being calculated
-- 🔄 **Dynamic Obstacles** - Real-time path replanning
-- 📈 **Performance Metrics** - Track algorithm performance
-- 🎨 **Customizable Colors** - Personalize your experience
-- 🌙 **Dark/Light Mode** - Easy on the eyes
-- 🌐 **Bilingual Support** - Chinese and English
+- 🌐 **Glass-morphism Design** - Beautiful frosted glass effects | 玻璃拟态设计
+- 📊 **Real-time Visualization** - Watch paths being calculated | 实时可视化
+- 🔄 **Dynamic Obstacles** - Real-time path replanning | 动态障碍物
+- 📈 **Performance Metrics** - Track algorithm performance | 性能指标
+- 🎨 **Customizable Colors** - Personalize your experience | 自定义配色
+- 🌙 **Dark/Light Mode** - Easy on the eyes | 深色/浅色模式
+- 🌐 **Bilingual Support** - Chinese and English | 中英文双语
 
-### AI Integration
+### 🤖 AI Integration | AI集成
 
-- 💬 **AI Assistant** - Get help with path planning questions
-- 📝 **Code Generation** - Generate optimized algorithm code
-- 🔧 **Code Optimization** - Improve your existing code
-- 📊 **Algorithm Comparison** - Compare different algorithms
+- 💬 **AI Assistant** - Get help with path planning questions | AI助手
+- 📝 **Code Generation** - Generate optimized algorithm code | 代码生成
+- 🔧 **Code Optimization** - Improve your existing code | 代码优化
+- 📊 **Algorithm Comparison** - Compare different algorithms | 算法对比
 
-## Screenshots
+## 📸 Screenshots | 截图展示
 
-### Main Interface
-![Main Interface](images/主页面.png)
+### Main Interface | 主界面
 
-### AI Assistant
-![AI Assistant](images/ai助手.png)
+![主页面](images/主页面.png)
 
-### 3D Visualization
-![3D Visualization](images/3d效果.png)
+### AI Assistant | AI助手
 
-### Dark Mode
-![Dark Mode](images/深色模式.png)
+![AI助手](images/ai助手.png)
 
-### English Interface
-![English Interface](images/英文模式.png)
+### 3D Visualization | 3D效果
 
-## Quick Start
+![3d效果](images/3d效果.png)
 
-### Web Interface (Recommended)
+### Dark Mode | 深色模式
+
+![深色模式](images/深色模式.png)
+
+### English Interface | 英文模式
+
+![英文模式](images/英文模式.png)
+
+## 🚀 Quick Start | 快速开始
+
+### Web Interface | Web界面（推荐）
 
 ```bash
 # Option 1: Direct browser
+# 方法1: 直接浏览器打开
 open web/index.html
 
 # Option 2: Python simple server
+# 方法2: Python简单服务器
 cd web
 python -m http.server 8080
 # Visit http://localhost:8080
 ```
 
-### Python Backend
+### Python Backend | Python后端
 
 ```bash
 # Install dependencies
+# 安装依赖
 pip install -r requirements.txt
 
 # Run example
+# 运行示例
 python examples/basic_example.py
 ```
 
-## Project Structure
+## 📁 Project Structure | 项目结构
 
 ```
 routeflow/
-├── images/                  # Screenshots
-├── web/                      # Web frontend
-│   ├── index.html           # Main application
-│   └── js/                  # JavaScript files
-│       └── algorithms/      # Algorithm implementations
-├── src/                      # Python source code
-│   ├── algorithms/          # Path planning algorithms
+├── images/                  # Screenshots | 截图
+├── web/                      # Web frontend | Web前端
+│   ├── index.html           # Main application | 主应用
+│   └── js/                  # JavaScript files | JavaScript文件
+│       └── algorithms/      # Algorithm implementations | 算法实现
+├── src/                      # Python source code | Python源代码
+│   ├── algorithms/          # Path planning algorithms | 路径规划算法
 │   │   ├── path_planning.py
 │   │   ├── simulator.py
 │   │   └── real-algorithms.js
-│   └── utils/              # Utility functions
-├── api/                      # Backend API
+│   └── utils/              # Utility functions | 工具函数
+├── api/                      # Backend API | 后端API
 │   └── app.py
-├── docs/                     # Documentation
-├── examples/                 # Example code
-├── dist/                     # Built files
-├── LICENSE                  # MIT License
-├── README.md                # This file
-├── CONTRIBUTING.md          # Contribution guide
-├── CHANGELOG.md             # Version history
-├── ALGORITHM_FORMAT.md      # Algorithm format guide
-├── .gitignore               # Git ignore rules
-└── requirements.txt         # Python dependencies
+├── docs/                     # Documentation | 文档
+├── examples/                 # Example code | 示例代码
+├── dist/                     # Built files | 构建文件
+├── LICENSE                  # MIT License | MIT许可证
+├── README.md                # English README / 中文说明
+├── CONTRIBUTING.md          # Contribution guide | 贡献指南
+├── CHANGELOG.md             # Version history | 版本历史
+├── ALGORITHM_FORMAT.md      # Algorithm format guide | 算法格式指南
+├── .gitignore               # Git ignore rules | Git忽略规则
+└── requirements.txt         # Python dependencies | Python依赖
 ```
 
-## Installation
+## 🛠️ Installation | 安装
 
 See [Installation Guide](docs/install.md) for detailed instructions.
 
-## Documentation
+详见[安装指南](docs/install.md)获取详细说明。
 
-- [📚 Installation Guide](docs/install.md) - Installation instructions
-- [📖 User Manual](docs/usage.md) - How to use the platform
-- [🔌 API Reference](docs/api.md) - API documentation
-- [🔧 Algorithm Format Guide](ALGORITHM_FORMAT.md) - How to import custom algorithms
+## 📖 Documentation | 文档
 
-## Custom Algorithm Import
+- [📚 Installation Guide](docs/install.md) - Installation instructions | 安装说明
+- [📖 User Manual](docs/usage.md) - How to use the platform | 使用手册
+- [🔌 API Reference](docs/api.md) - API documentation | API文档
+- [🔧 Algorithm Format Guide](ALGORITHM_FORMAT.md) - How to import custom algorithms | 如何导入自定义算法
 
-RouteFlow supports importing custom path planning algorithms. You can create your own algorithms and integrate them into the platform.
+## 🔧 Custom Algorithm Import | 自定义算法导入
 
-### Quick Example
+RouteFlow supports importing custom path planning algorithms! You can create your own algorithms and integrate them into the platform.
+
+RouteFlow 支持导入自定义路径规划算法！您可以创建自己的算法并将其集成到平台中。
+
+### Quick Example | 快速示例
 
 ```javascript
 class MyAlgorithm {
     plan(grid, start, goal) {
         // Your algorithm implementation
+        // 您的算法实现
         return {
             success: true,
             path: [[0,0], [1,0], [2,1]],
@@ -142,40 +158,54 @@ class MyAlgorithm {
 
 See [Algorithm Format Guide](ALGORITHM_FORMAT.md) for detailed instructions.
 
-## Contributing
+详见[算法格式指南](ALGORITHM_FORMAT.md)获取详细说明。
+
+## 🤝 Contributing | 贡献
 
 Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) for details.
 
-### Quick Guide
+欢迎贡献！请阅读我们的[贡献指南](CONTRIBUTING.md)了解更多细节。
+
+### Quick Guide | 快速指南
 
 ```bash
 # 1. Fork the repository
+# 1. Fork 本仓库
+
 # 2. Clone your fork
-git clone https://github.com/NingJiangXie/routeflow.git
+# 2. 克隆你的fork
+git clone https://github.com/your-username/routeflow.git
 cd routeflow
 
 # 3. Create your feature branch
+# 3. 创建特性分支
 git checkout -b feature/amazing-feature
 
 # 4. Make your changes
+# 4. 进行更改
+
 # 5. Commit and push
+# 5. 提交并推送
 git commit -m "Add amazing feature"
 git push origin feature/amazing-feature
 
 # 6. Open a Pull Request
+# 6. 创建 Pull Request
 ```
 
-## License
+## 📜 License | 许可证
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+本项目使用MIT许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
 
-- [React Bits](https://github.com/DavidHDev/react-bits) - UI design inspiration
-- [Three.js](https://threejs.org/) - 3D visualization
-- [Font Awesome](https://fontawesome.com/) - Icons
+## 🙏 Acknowledgments | 致谢
 
-## Stats
+- [React Bits](https://github.com/DavidHDev/react-bits) - UI design inspiration | UI设计灵感
+- [Three.js](https://threejs.org/) - 3D visualization | 3D可视化
+- [Font Awesome](https://fontawesome.com/) - Icons | 图标
+
+## 📊 Stats | 统计
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/NingJiangXie/routeflow)
 ![GitHub language count](https://img.shields.io/github/languages/count/NingJiangXie/routeflow)
@@ -185,6 +215,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**© 2026 RouteFlow. All rights reserved.**
+**© 2026 RouteFlow. All rights reserved. | 保留所有权利。**
 
 </div>
