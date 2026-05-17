@@ -1,8 +1,10 @@
-# 路径规划系统
+# RouteFlow (途畅)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<div align="center">
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![GitHub stars](https://img.shields.io/github/stars/your-username/path-planning-system)](https://github.com/your-username/path-planning-system/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/your-username/routeflow?style=social)](https://github.com/your-username/routeflow/stargazers)
 
 [English](README.md) | [中文](README_Chinese.md)
 

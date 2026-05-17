@@ -5,9 +5,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![GitHub Stars](https://img.shields.io/github/stars/your-username/routeflow?style=social)](https://github.com/your-username/routeflow/stargazers)
-[![Twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fyour-username%2Frouteflow)](https://twitter.com/intent/tweet?text=I%20just%20found%20%23RouteFlow%20%F0%9F%9A%8C%20-%20an%20amazing%20AI-powered%20path%20planning%20system!%20Check%20it%20out%3A%20https%3A%2F%2Fgithub.com%2Fyour-username%2Frouteflow)
 
-**English** | [简体中文](README_Chinese.md) | [日本語](README_Japanese.md)
+**English** | [简体中文](README_Chinese.md)
 
 *A modern AI-powered path planning platform with beautiful web interface*
 
