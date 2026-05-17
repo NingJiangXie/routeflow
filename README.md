@@ -217,8 +217,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**Made with ❤️ for path planning enthusiasts | 用❤️为路径规划爱好者打造**
-
 **© 2026 RouteFlow. All rights reserved. | 保留所有权利。**
 
 </div>
