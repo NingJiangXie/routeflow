@@ -26,7 +26,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - **D* Lite Algorithm** - Real-time dynamic path replanning | 实时动态路径重规划
 - **RRT* Algorithm** - Optimal probabilistic path planning | 最优概率路径规划
 - **ACO Algorithm** - Ant Colony Optimization | 蚁群优化算法
-- **HCFA Algorithm** - Hybrid Cooperative Fusion Algorithm | 混合协作融合算法
 
 #### User Interface | 用户界面
 - 🌐 **Modern Web Interface** - Glass-morphism design | 玻璃拟态设计

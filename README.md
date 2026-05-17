@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![GitHub Stars](https://img.shields.io/github/stars/your-username/routeflow?style=social)](https://github.com/your-username/routeflow/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/NingJiangXie/routeflow?style=social)](https://github.com/NingJiangXie/routeflow/stargazers)
 
 **English** | [简体中文](README_Chinese.md)
 
@@ -21,7 +21,6 @@
 | **D* Lite** | Real-time dynamic replanning for moving obstacles | 移动障碍物的实时动态重规划 |
 | **RRT*** | Probabilistically optimal path planning | 概率最优路径规划 |
 | **ACO** | Ant Colony Optimization | 蚁群优化算法 |
-| **HCFA** | Hybrid Cooperative Fusion Algorithm | 混合协作融合算法 |
 
 ### 🎨 Modern UI | 现代化界面
 
@@ -39,6 +38,28 @@
 - 📝 **Code Generation** - Generate optimized algorithm code | 代码生成
 - 🔧 **Code Optimization** - Improve your existing code | 代码优化
 - 📊 **Algorithm Comparison** - Compare different algorithms | 算法对比
+
+## 📸 Screenshots | 截图展示
+
+### Main Interface | 主界面
+
+![主页面](images/主页面.png)
+
+### AI Assistant | AI助手
+
+![AI助手](images/ai助手.png)
+
+### 3D Visualization | 3D效果
+
+![3d效果](images/3d效果.png)
+
+### Dark Mode | 深色模式
+
+![深色模式](images/深色模式.png)
+
+### English Interface | 英文模式
+
+![英文模式](images/英文模式.png)
 
 ## 🚀 Quick Start | 快速开始
 
@@ -72,6 +93,7 @@ python examples/basic_example.py
 
 ```
 routeflow/
+├── images/                  # Screenshots | 截图
 ├── web/                      # Web frontend | Web前端
 │   ├── index.html           # Main application | 主应用
 │   └── js/                  # JavaScript files | JavaScript文件
@@ -92,6 +114,8 @@ routeflow/
 ├── README_Chinese.md         # 中文说明
 ├── CONTRIBUTING.md          # Contribution guide | 贡献指南
 ├── CHANGELOG.md             # Version history | 版本历史
+├── ALGORITHM_FORMAT.md      # Algorithm format guide | 算法格式指南
+├── ALGORITHM_FORMAT_Chinese.md
 ├── .gitignore               # Git ignore rules | Git忽略规则
 └── requirements.txt         # Python dependencies | Python依赖
 ```
@@ -185,9 +209,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📊 Stats | 统计
 
-![GitHub repo size](https://img.shields.io/github/repo-size/your-username/routeflow)
-![GitHub language count](https://img.shields.io/github/languages/count/your-username/routeflow)
-![GitHub last commit](https://img.shields.io/github/last-commit/your-username/routeflow)
+![GitHub repo size](https://img.shields.io/github/repo-size/NingJiangXie/routeflow)
+![GitHub language count](https://img.shields.io/github/languages/count/NingJiangXie/routeflow)
+![GitHub last commit](https://img.shields.io/github/last-commit/NingJiangXie/routeflow)
 
 ---
 

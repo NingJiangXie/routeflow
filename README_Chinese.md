@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![GitHub Stars](https://img.shields.io/github/stars/your-username/routeflow?style=social)](https://github.com/your-username/routeflow/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/NingJiangXie/routeflow?style=social)](https://github.com/NingJiangXie/routeflow/stargazers)
 
 [English](README.md) | [中文](README_Chinese.md)
 
@@ -18,7 +18,6 @@
 - **D* Lite** - 用于移动障碍物的实时动态重规划
 - **RRT*** - 概率最优路径规划
 - **ACO** - 蚁群优化算法
-- **HCFA** - 混合协作融合算法
 
 ### 🎨 用户界面与功能
 - 🌐 现代化玻璃效果Web界面
@@ -27,6 +26,28 @@
 - 📈 统计数据和性能指标
 - 🎨 可自定义配色方案
 - 📱 响应式设计
+
+## 📸 截图展示
+
+### 主界面
+
+![主页面](images/主页面.png)
+
+### AI助手
+
+![AI助手](images/ai助手.png)
+
+### 3D效果
+
+![3d效果](images/3d效果.png)
+
+### 深色模式
+
+![深色模式](images/深色模式.png)
+
+### 英文模式
+
+![英文模式](images/英文模式.png)
 
 ## 🚀 快速开始
 
@@ -49,22 +70,29 @@ pip install -r requirements.txt
 ## 📁 项目结构
 
 ```
-path-planning-system/
-├── web/                    # Web前端
-│   ├── index.html         # 主界面
+routeflow/
+├── images/                  # Screenshots | 截图
+├── web/                    # Web frontend | Web前端
+│   ├── index.html         # Main application | 主应用
 │   └── js/
-│       └── algorithms/    # JavaScript实现
-├── src/                    # 源代码
-│   ├── algorithms/        # 路径规划算法
-│   │   ├── path_planning.py (Python)
+│       └── algorithms/    # JavaScript implementations | JavaScript实现
+├── src/                    # Source code | 源代码
+│   ├── algorithms/        # Path planning algorithms | 路径规划算法
+│   │   ├── path_planning.py
 │   │   ├── simulator.py
-│   │   └── real-algorithms.js (JS)
-│   └── utils/            # 工具函数
-├── docs/                  # 文档
-├── examples/             # 示例代码
-├── LICENSE               # MIT许可证
-├── README.md             # 本文档
-└── requirements.txt      # Python依赖
+│   │   └── real-algorithms.js
+│   └── utils/             # Utility functions | 工具函数
+├── api/                    # Backend API | 后端API
+├── docs/                   # Documentation | 文档
+├── examples/               # Examples | 示例代码
+├── requirements.txt        # Python dependencies | Python依赖
+├── README.md              # English README
+├── README_Chinese.md      # 中文说明
+├── CONTRIBUTING.md        # Contribution guide | 贡献指南
+├── CHANGELOG.md           # Changelog | 更新日志
+├── ALGORITHM_FORMAT.md    # Algorithm format guide | 算法格式指南
+├── ALGORITHM_FORMAT_Chinese.md
+└── LICENSE                # MIT License | MIT许可证
 ```
 
 ## 📖 文档
