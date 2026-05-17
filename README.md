@@ -4,10 +4,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![GitHub Stars](https://img.shields.io/github/stars/your-username/routeflow?style=social)](https://github.com/your-username/routeflow/stargazers)
-[![Twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fyour-username%2Frouteflow)](https://twitter.com/intent/tweet?text=I%20just%20found%20%23RouteFlow%20%F0%9F%9A%8C%20-%20an%20amazing%20AI-powered%20path%20planning%20system!%20Check%20it%20out%3A%20https%3A%2F%2Fgithub.com%2Fyour-username%2Frouteflow)
+[![GitHub Stars](https://img.shields.io/github/stars/NingJiangXie/routeflow?style=social)](https://github.com/NingJiangXie/routeflow/stargazers)
 
-**English** | [简体中文](README_Chinese.md) | [日本語](README_Japanese.md)
+**English / 简体中文**
 
 *A modern AI-powered path planning platform with beautiful web interface*
 
@@ -22,7 +21,6 @@
 | **D* Lite** | Real-time dynamic replanning for moving obstacles | 移动障碍物的实时动态重规划 |
 | **RRT*** | Probabilistically optimal path planning | 概率最优路径规划 |
 | **ACO** | Ant Colony Optimization | 蚁群优化算法 |
-| **HCFA** | Hybrid Cooperative Fusion Algorithm | 混合协作融合算法 |
 
 ### 🎨 Modern UI | 现代化界面
 
@@ -40,6 +38,28 @@
 - 📝 **Code Generation** - Generate optimized algorithm code | 代码生成
 - 🔧 **Code Optimization** - Improve your existing code | 代码优化
 - 📊 **Algorithm Comparison** - Compare different algorithms | 算法对比
+
+## 📸 Screenshots | 截图展示
+
+### Main Interface | 主界面
+
+![主页面](images/主页面.png)
+
+### AI Assistant | AI助手
+
+![AI助手](images/ai助手.png)
+
+### 3D Visualization | 3D效果
+
+![3d效果](images/3d效果.png)
+
+### Dark Mode | 深色模式
+
+![深色模式](images/深色模式.png)
+
+### English Interface | 英文模式
+
+![英文模式](images/英文模式.png)
 
 ## 🚀 Quick Start | 快速开始
 
@@ -73,6 +93,7 @@ python examples/basic_example.py
 
 ```
 routeflow/
+├── images/                  # Screenshots | 截图
 ├── web/                      # Web frontend | Web前端
 │   ├── index.html           # Main application | 主应用
 │   └── js/                  # JavaScript files | JavaScript文件
@@ -89,10 +110,10 @@ routeflow/
 ├── examples/                 # Example code | 示例代码
 ├── dist/                     # Built files | 构建文件
 ├── LICENSE                  # MIT License | MIT许可证
-├── README.md                # English README
-├── README_Chinese.md         # 中文说明
+├── README.md                # English README / 中文说明
 ├── CONTRIBUTING.md          # Contribution guide | 贡献指南
 ├── CHANGELOG.md             # Version history | 版本历史
+├── ALGORITHM_FORMAT.md      # Algorithm format guide | 算法格式指南
 ├── .gitignore               # Git ignore rules | Git忽略规则
 └── requirements.txt         # Python dependencies | Python依赖
 ```
@@ -137,7 +158,7 @@ class MyAlgorithm {
 
 See [Algorithm Format Guide](ALGORITHM_FORMAT.md) for detailed instructions.
 
-详见[算法格式指南](ALGORITHM_FORMAT_Chinese.md)获取详细说明。
+详见[算法格式指南](ALGORITHM_FORMAT.md)获取详细说明。
 
 ## 🤝 Contributing | 贡献
 
@@ -186,15 +207,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📊 Stats | 统计
 
-![GitHub repo size](https://img.shields.io/github/repo-size/your-username/routeflow)
-![GitHub language count](https://img.shields.io/github/languages/count/your-username/routeflow)
-![GitHub last commit](https://img.shields.io/github/last-commit/your-username/routeflow)
+![GitHub repo size](https://img.shields.io/github/repo-size/NingJiangXie/routeflow)
+![GitHub language count](https://img.shields.io/github/languages/count/NingJiangXie/routeflow)
+![GitHub last commit](https://img.shields.io/github/last-commit/NingJiangXie/routeflow)
 
 ---
 
 <div align="center">
-
-**Made with ❤️ for path planning enthusiasts | 用❤️为路径规划爱好者打造**
 
 **© 2026 RouteFlow. All rights reserved. | 保留所有权利。**
 

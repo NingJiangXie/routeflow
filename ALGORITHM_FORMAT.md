@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**English** | [中文](ALGORITHM_FORMAT_Chinese.md)
+**English / 简体中文**
 
 *Complete guide for importing custom algorithms into RouteFlow*
 
@@ -349,6 +349,6 @@ plan(grid, start, goal) {
 
 **Happy coding! | 编码愉快！**
 
-**For more information, visit our [GitHub Repository](https://github.com/your-username/routeflow)**
+**For more information, visit our [GitHub Repository](https://github.com/NingJiangXie/routeflow)**
 
 </div>
