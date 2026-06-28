@@ -10,7 +10,9 @@ export default defineConfig(({ mode }) => {
 
   return {
     root: rootDir,
-    plugins: [react()],
+    plugins: [react({
+      jsxRuntime: 'automatic',
+    })],
 
     // Resolve configuration
     resolve: {
