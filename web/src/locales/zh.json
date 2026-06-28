@@ -1,0 +1,318 @@
+{
+  "app": {
+    "title": "RouteFlow",
+    "subtitle": "智能路径规划工作台"
+  },
+  "tabs": {
+    "planning": "规划",
+    "assistant": "AI",
+    "review": "复盘",
+    "benchmark": "基准",
+    "maps": "地图库",
+    "stats": "统计"
+  },
+  "theme": {
+    "toggle": "切换主题"
+  },
+  "status": {
+    "idle": "待规划",
+    "running": "执行中",
+    "done": "已完成",
+    "failed": "失败",
+    "paused": "已暂停"
+  },
+  "workspace": {
+    "syncing": "同步中",
+    "synced": "后端已同步",
+    "empty": "空工作区",
+    "offline": "后端离线",
+    "unsynced": "未同步更改",
+    "draftSaved": "草稿已保存",
+    "draftDeleted": "草稿已删除",
+    "runSaved": "记录已保存",
+    "runsCleared": "记录已清空"
+  },
+  "control": {
+    "scenario": "场景",
+    "algorithm": "算法",
+    "editMode": "编辑模式",
+    "parameters": "参数",
+    "gridSize": "网格大小",
+    "density": "障碍密度",
+    "speed": "执行速度",
+    "dynamic": "动态障碍",
+    "regenerate": "重新生成",
+    "run": "开始规划",
+    "clear": "清除路径",
+    "draw": "障碍绘制",
+    "erase": "擦除",
+    "start": "起点",
+    "goal": "终点",
+    "preset": "参数预设",
+    "savePreset": "保存预设",
+    "managePresets": "管理预设"
+  },
+  "scenarios": {
+    "balanced": "均衡巡航",
+    "dense": "密集障碍",
+    "dynamic": "动态避障",
+    "explore": "大图探索",
+    "maze": "迷宫",
+    "rooms": "房间",
+    "city": "城市网格",
+    "spiral": "螺旋",
+    "forest": "随机森林"
+  },
+  "algorithm": {
+    "astar": {
+      "label": "基线最短路",
+      "description": "适合静态栅格环境，作为路径质量、搜索节点和执行耗时的稳定对照基线。"
+    },
+    "dstar": {
+      "label": "动态重规划",
+      "description": "适合移动障碍和需要快速重规划的机器人导航任务。"
+    },
+    "rrt": {
+      "label": "采样探索",
+      "description": "适合大尺度空间和复杂约束，先探索后优化路径。"
+    },
+    "aco": {
+      "label": "群体启发",
+      "description": "适合多目标搜索和路径质量对比，通过启发式权重寻找路线。"
+    },
+    "strength": {
+      "stable": "稳定基线",
+      "optimal": "最短路",
+      "explainable": "易解释",
+      "dynamic": "动态地图",
+      "localRepair": "局部修复",
+      "stablePath": "路径稳定",
+      "exploration": "大图探索",
+      "nonHolonomic": "非规则空间",
+      "asymptotic": "渐进优化",
+      "multiObjective": "多目标",
+      "heuristic": "启发式",
+      "globalSearch": "全局搜索"
+    }
+  },
+  "complexity": {
+    "low": "低复杂度",
+    "medium": "中复杂度",
+    "high": "高复杂度"
+  },
+  "metrics": {
+    "pathLength": "路径长度",
+    "time": "耗时",
+    "nodes": "扩展节点",
+    "replans": "重规划",
+    "status": "状态",
+    "waiting": "待规划",
+    "success": "成功",
+    "failure": "失败",
+    "score": "综合评分",
+    "avgTime": "平均耗时",
+    "successRate": "成功率"
+  },
+  "canvas": {
+    "loading": "载入中",
+    "editHint": {
+      "draw": "绘制障碍",
+      "erase": "擦除障碍",
+      "start": "设置起点",
+      "goal": "设置终点",
+      "default": "地图编辑"
+    }
+  },
+  "toolbar": {
+    "drafts": "草稿",
+    "history": "历史",
+    "saveDraft": "保存草稿",
+    "loadDraft": "加载草稿",
+    "deleteDraft": "删除草稿",
+    "saveRun": "保存记录",
+    "export": "导出地图",
+    "import": "导入地图",
+    "compare": "算法对比",
+    "benchmark": "基准测试",
+    "mapLibrary": "地图库",
+    "exportJson": "导出 JSON",
+    "exportImage": "导出图片",
+    "importJson": "导入 JSON",
+    "importImage": "导入图片",
+    "noDrafts": "暂无草稿",
+    "noHistory": "暂无历史",
+    "favorites": "收藏",
+    "addFavorite": "添加收藏"
+  },
+  "assistant": {
+    "title": "AI 助手",
+    "placeholder": "输入问题...",
+    "send": "发送",
+    "workflows": "快捷工作流",
+    "explainAstar": "解释 A* 与 D* Lite 的适用边界",
+    "compareRrtAco": "比较 RRT* 与 ACO 在大地图上的表现",
+    "optimization": "给我一份路径规划算法优化建议",
+    "generatePython": "生成一个 Python 栅格路径规划示例",
+    "configure": "配置 API"
+  },
+  "chat": {
+    "welcome": "你好，我是 RouteFlow 助手。可以帮你解释算法、生成代码、比较规划效果。",
+    "error": {
+      "backend": "后端暂不可用："
+    },
+    "noApiKey": "还没有配置 API Key。我可以先基于本地规则给你建议：优先降低障碍密度、比较 D* Lite 与 RRT*，再保存统计结果做对照。"
+  },
+  "insights": {
+    "title": "运行记录",
+    "clear": "清空记录",
+    "algorithm": "算法",
+    "scenario": "场景",
+    "length": "长度",
+    "time": "耗时",
+    "nodes": "节点",
+    "replans": "重规划",
+    "best": "最优",
+    "noRuns": "暂无运行记录",
+    "tip": "保存运行记录后，可以在此对比不同算法在不同场景下的表现。",
+    "exportReport": "导出报告"
+  },
+  "benchmark": {
+    "title": "算法基准测试",
+    "run": "运行基准测试",
+    "running": "测试中...",
+    "quick": "快速",
+    "standard": "标准",
+    "thorough": "全面",
+    "preset": "测试预设",
+    "runs": "运行轮次",
+    "algorithms": "选择算法",
+    "results": "测试结果",
+    "chart": "对比图表",
+    "table": "数据表格",
+    "export": "导出报告",
+    "noResults": "尚未运行基准测试",
+    "tip": "选择算法和预设，一键运行所有算法的对比测试。",
+    "presets": {
+      "quick": "快速测试",
+      "quickDesc": "每个算法运行 1 次",
+      "standard": "标准测试",
+      "standardDesc": "每个算法运行 5 次，取平均值",
+      "thorough": "全面测试",
+      "thoroughDesc": "每个算法运行 20 次，统计方差"
+    },
+    "summary": {
+      "bestTime": "最快算法",
+      "bestLength": "最短路径",
+      "bestNodes": "最少节点",
+      "bestOverall": "综合最优"
+    }
+  },
+  "presets": {
+    "title": "参数预设",
+    "save": "保存预设",
+    "load": "加载预设",
+    "delete": "删除预设",
+    "duplicate": "复制预设",
+    "export": "导出预设",
+    "import": "导入预设",
+    "name": "预设名称",
+    "description": "描述",
+    "builtIn": "内置",
+    "custom": "自定义",
+    "confirmDelete": "确定删除这个预设吗？"
+  },
+  "maps": {
+    "title": "地图库",
+    "save": "保存当前地图",
+    "load": "加载地图",
+    "delete": "删除",
+    "rename": "重命名",
+    "export": "导出",
+    "import": "导入",
+    "templates": "场景模板",
+    "favorites": "我的收藏",
+    "search": "搜索地图...",
+    "name": "地图名称",
+    "description": "描述",
+    "tags": "标签",
+    "noMaps": "暂无保存的地图",
+    "confirmDelete": "确定删除这张地图吗？",
+    "importSuccess": "导入成功",
+    "importFailed": "导入失败",
+    "exportImage": "导出为图片",
+    "importImage": "从图片导入",
+    "imageThreshold": "识别阈值"
+  },
+  "shortcuts": {
+    "title": "快捷键",
+    "description": "常用操作快捷键",
+    "category": {
+      "navigation": "导航",
+      "editing": "编辑",
+      "playback": "播放",
+      "tools": "工具"
+    }
+  },
+  "stats": {
+    "title": "数据统计",
+    "totalRuns": "总运行次数",
+    "totalTime": "总耗时",
+    "successRate": "总成功率",
+    "algorithmRanking": "算法排行",
+    "weeklyTrend": "近 7 天趋势",
+    "bestAlgorithm": "最佳算法",
+    "avgTime": "平均耗时",
+    "clear": "清除统计",
+    "export": "导出数据",
+    "noData": "暂无统计数据，运行几次规划看看吧"
+  },
+  "playback": {
+    "play": "播放",
+    "pause": "暂停",
+    "reset": "重置",
+    "stepForward": "单步前进",
+    "stepBackward": "单步后退",
+    "speed": "播放速度",
+    "slow": "慢速",
+    "normal": "正常",
+    "fast": "快速",
+    "faster": "极速"
+  },
+  "modal": {
+    "close": "关闭",
+    "save": "保存配置",
+    "saveSuccess": "配置已保存",
+    "saveFailed": "保存失败",
+    "provider": "Provider",
+    "model": "模型",
+    "apiKey": "API Key",
+    "baseUrl": "Base URL",
+    "optional": "可选",
+    "algorithmMatrix": "算法能力矩阵",
+    "codeStudio": "代码生成与导出",
+    "codeAdvice": "可结合 AI 配置生成完整算法实现；本地模式下提供模板和工程结构建议。",
+    "shortcutsHelp": "快捷键帮助",
+    "apiConfig": "API 配置",
+    "advancedOptions": "高级选项",
+    "testConnection": "测试连接",
+    "testing": "测试中...",
+    "connectionSuccess": "连接成功！",
+    "connectionFailed": "连接失败",
+    "exportConfig": "导出配置",
+    "importConfig": "导入配置",
+    "apiKeyPlaceholder": "输入您的 API Key",
+    "baseUrlPlaceholder": "例如：https://api.openai.com/v1",
+    "temperature": "Temperature",
+    "maxTokens": "最大 Token 数",
+    "apiKeyTip": "您的 API Key 仅保存在本地浏览器中，不会发送到我们的服务器。",
+    "invalidApiKey": "API Key 无效",
+    "invalidBaseUrl": "Base URL 必须以 http:// 或 https:// 开头",
+    "selectModel": "请选择模型"
+  },
+  "errors": {
+    "loadFailed": "加载失败",
+    "saveFailed": "保存失败",
+    "planFailed": "规划失败",
+    "importFailed": "导入失败"
+  }
+}

@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: routeflow-api
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - LOG_LEVEL=INFO
+      - JSON_LOGS=true
+      - CORS_ORIGINS=http://localhost:80,http://localhost:3000
+      - RATE_LIMIT_DEFAULT=100/minute
+      - RATE_LIMIT_CHAT=20/minute
+      - RATE_LIMIT_CODE_GEN=10/minute
+      - RATE_LIMIT_WORKSPACE=60/minute
+      - ENABLE_GIT_API=false
+      - ALLOW_PERSIST_API_KEYS=false
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped
+    networks:
+      - routeflow-network
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+      args:
+        - VITE_API_BASE_URL=http://localhost:8000
+    container_name: routeflow-web
+    ports:
+      - "3000:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+    restart: unless-stopped
+    networks:
+      - routeflow-network
+
+networks:
+  routeflow-network:
+    driver: bridge

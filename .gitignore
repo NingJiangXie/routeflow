@@ -35,14 +35,20 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.npm
+.yarn/
+.npm/
 .yarn-integrity
-package-lock.json
 yarn.lock
+.pnp
+.pnp.js
 
 # Build outputs
-# Uncomment the following line if you don't want to commit built files
-# dist/
+dist/
+.r2/
+.runs/
+.runtime/
+artifacts/
+out/
 
 # IDE
 .vscode/
@@ -51,12 +57,14 @@ yarn.lock
 *.swo
 *~
 .DS_Store
+.Fleet/
 
 # OS
 Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+._*
 
 # Temporary files
 *.tmp
@@ -64,14 +72,26 @@ $RECYCLE.BIN/
 *.bak
 *.cache
 *.temp
-*.swp
-*.swo
+*.pid
+*.seed
+*.prof
+coverage.txt
 
 # API keys and secrets
+api/config/
+api/data/
+api/*.json
+!api/.env.example
 *.pem
 *.key
+*.crt
+*.p12
+*.keystore
 credentials.json
 secrets.json
+.env.local
+.env.development
+.env.production
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -81,21 +101,24 @@ secrets.json
 .pytest_cache/
 .coverage
 htmlcov/
+coverage/
 .tox/
 .nox/
+.vitest/
+.nyc_output/
 
-# Distribution / packaging
-.Python
-env/
-build/
-develop-eggs/
-dist/
-eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+*.map
+*.gz
+*.br
+.Direnity/
+
+# Git hooks
+.git/hooks/*.local
+
+# RouteFlow specific
+api/config.json
+web/dist/

@@ -1,0 +1,318 @@
+{
+  "app": {
+    "title": "RouteFlow",
+    "subtitle": "Intelligent Path Planning Workspace"
+  },
+  "tabs": {
+    "planning": "Plan",
+    "assistant": "AI",
+    "review": "Review",
+    "benchmark": "Benchmark",
+    "maps": "Maps",
+    "stats": "Stats"
+  },
+  "theme": {
+    "toggle": "Toggle theme"
+  },
+  "status": {
+    "idle": "Idle",
+    "running": "Running",
+    "done": "Done",
+    "failed": "Failed",
+    "paused": "Paused"
+  },
+  "workspace": {
+    "syncing": "Syncing",
+    "synced": "Backend synced",
+    "empty": "Empty workspace",
+    "offline": "Backend offline",
+    "unsynced": "Unsaved changes",
+    "draftSaved": "Draft saved",
+    "draftDeleted": "Draft deleted",
+    "runSaved": "Record saved",
+    "runsCleared": "Records cleared"
+  },
+  "control": {
+    "scenario": "Scenario",
+    "algorithm": "Algorithm",
+    "editMode": "Edit Mode",
+    "parameters": "Parameters",
+    "gridSize": "Grid Size",
+    "density": "Obstacle Density",
+    "speed": "Speed",
+    "dynamic": "Dynamic Obstacles",
+    "regenerate": "Regenerate",
+    "run": "Plan Path",
+    "clear": "Clear Path",
+    "draw": "Draw walls",
+    "erase": "Erase",
+    "start": "Start",
+    "goal": "Goal",
+    "preset": "Preset",
+    "savePreset": "Save Preset",
+    "managePresets": "Manage Presets"
+  },
+  "scenarios": {
+    "balanced": "Balanced",
+    "dense": "Dense Grid",
+    "dynamic": "Dynamic Avoidance",
+    "explore": "Large Map",
+    "maze": "Maze",
+    "rooms": "Rooms",
+    "city": "City Grid",
+    "spiral": "Spiral",
+    "forest": "Random Forest"
+  },
+  "algorithm": {
+    "astar": {
+      "label": "Baseline Optimal",
+      "description": "Suited for static grid environments, providing stable baseline for path quality, node expansion, and execution time."
+    },
+    "dstar": {
+      "label": "Dynamic Replanning",
+      "description": "Suited for moving obstacles and robot navigation tasks requiring fast replanning."
+    },
+    "rrt": {
+      "label": "Sampling Exploration",
+      "description": "Suited for large-scale spaces and complex constraints, exploring then optimizing the path."
+    },
+    "aco": {
+      "label": "Swarm Heuristic",
+      "description": "Suited for multi-objective search and path quality comparison, finding routes through heuristic weighting."
+    },
+    "strength": {
+      "stable": "Stable baseline",
+      "optimal": "Optimal path",
+      "explainable": "Explainable",
+      "dynamic": "Dynamic maps",
+      "localRepair": "Local repair",
+      "stablePath": "Stable path",
+      "exploration": "Large map exploration",
+      "nonHolonomic": "Non-holonomic",
+      "asymptotic": "Asymptotically optimal",
+      "multiObjective": "Multi-objective",
+      "heuristic": "Heuristic",
+      "globalSearch": "Global search"
+    }
+  },
+  "complexity": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High"
+  },
+  "metrics": {
+    "pathLength": "Path Length",
+    "time": "Time",
+    "nodes": "Nodes",
+    "replans": "Replans",
+    "status": "Status",
+    "waiting": "Waiting",
+    "success": "Success",
+    "failure": "Failure",
+    "score": "Score",
+    "avgTime": "Avg Time",
+    "successRate": "Success Rate"
+  },
+  "canvas": {
+    "loading": "Loading",
+    "editHint": {
+      "draw": "Draw walls",
+      "erase": "Erase walls",
+      "start": "Set start",
+      "goal": "Set goal",
+      "default": "Map Editor"
+    }
+  },
+  "toolbar": {
+    "drafts": "Drafts",
+    "history": "History",
+    "saveDraft": "Save Draft",
+    "loadDraft": "Load Draft",
+    "deleteDraft": "Delete Draft",
+    "saveRun": "Save Run",
+    "export": "Export Map",
+    "import": "Import Map",
+    "compare": "Compare",
+    "benchmark": "Benchmark",
+    "mapLibrary": "Map Library",
+    "exportJson": "Export JSON",
+    "exportImage": "Export Image",
+    "importJson": "Import JSON",
+    "importImage": "Import Image",
+    "noDrafts": "No drafts",
+    "noHistory": "No history",
+    "favorites": "Favorites",
+    "addFavorite": "Add to Favorites"
+  },
+  "assistant": {
+    "title": "AI Assistant",
+    "placeholder": "Ask a question...",
+    "send": "Send",
+    "workflows": "Quick Actions",
+    "explainAstar": "Explain A* vs D* Lite boundaries",
+    "compareRrtAco": "Compare RRT* vs ACO on large maps",
+    "optimization": "Path planning optimization tips",
+    "generatePython": "Generate Python grid planning example",
+    "configure": "Configure API"
+  },
+  "chat": {
+    "welcome": "Hello, I'm RouteFlow assistant. I can help explain algorithms, generate code, and compare planning results.",
+    "error": {
+      "backend": "Backend unavailable: "
+    },
+    "noApiKey": "No API Key configured yet. I can still provide local suggestions: try lowering obstacle density, comparing D* Lite with RRT*, and saving statistics for comparison."
+  },
+  "insights": {
+    "title": "Run History",
+    "clear": "Clear All",
+    "algorithm": "Algorithm",
+    "scenario": "Scenario",
+    "length": "Length",
+    "time": "Time",
+    "nodes": "Nodes",
+    "replans": "Replans",
+    "best": "Best",
+    "noRuns": "No run history yet",
+    "tip": "Save run records to compare algorithm performance across different scenarios.",
+    "exportReport": "Export Report"
+  },
+  "benchmark": {
+    "title": "Algorithm Benchmark",
+    "run": "Run Benchmark",
+    "running": "Running...",
+    "quick": "Quick",
+    "standard": "Standard",
+    "thorough": "Thorough",
+    "preset": "Test Presets",
+    "runs": "Runs",
+    "algorithms": "Select Algorithms",
+    "results": "Results",
+    "chart": "Chart",
+    "table": "Table",
+    "export": "Export Report",
+    "noResults": "No benchmark results yet",
+    "tip": "Select algorithms and a preset, then run a full comparison test.",
+    "presets": {
+      "quick": "Quick Test",
+      "quickDesc": "1 run per algorithm",
+      "standard": "Standard Test",
+      "standardDesc": "5 runs per algorithm, averaged",
+      "thorough": "Thorough Test",
+      "thoroughDesc": "20 runs per algorithm, with variance"
+    },
+    "summary": {
+      "bestTime": "Fastest",
+      "bestLength": "Shortest Path",
+      "bestNodes": "Fewest Nodes",
+      "bestOverall": "Best Overall"
+    }
+  },
+  "presets": {
+    "title": "Parameter Presets",
+    "save": "Save Preset",
+    "load": "Load Preset",
+    "delete": "Delete",
+    "duplicate": "Duplicate",
+    "export": "Export",
+    "import": "Import",
+    "name": "Preset Name",
+    "description": "Description",
+    "builtIn": "Built-in",
+    "custom": "Custom",
+    "confirmDelete": "Delete this preset?"
+  },
+  "maps": {
+    "title": "Map Library",
+    "save": "Save Current Map",
+    "load": "Load Map",
+    "delete": "Delete",
+    "rename": "Rename",
+    "export": "Export",
+    "import": "Import",
+    "templates": "Templates",
+    "favorites": "Favorites",
+    "search": "Search maps...",
+    "name": "Map Name",
+    "description": "Description",
+    "tags": "Tags",
+    "noMaps": "No saved maps yet",
+    "confirmDelete": "Delete this map?",
+    "importSuccess": "Import successful",
+    "importFailed": "Import failed",
+    "exportImage": "Export as Image",
+    "importImage": "Import from Image",
+    "imageThreshold": "Threshold"
+  },
+  "shortcuts": {
+    "title": "Keyboard Shortcuts",
+    "description": "Common operation shortcuts",
+    "category": {
+      "navigation": "Navigation",
+      "editing": "Editing",
+      "playback": "Playback",
+      "tools": "Tools"
+    }
+  },
+  "stats": {
+    "title": "Statistics",
+    "totalRuns": "Total Runs",
+    "totalTime": "Total Time",
+    "successRate": "Success Rate",
+    "algorithmRanking": "Algorithm Ranking",
+    "weeklyTrend": "7-Day Trend",
+    "bestAlgorithm": "Best Algorithm",
+    "avgTime": "Avg Time",
+    "clear": "Clear Stats",
+    "export": "Export Data",
+    "noData": "No stats yet. Run some planning to see data!"
+  },
+  "playback": {
+    "play": "Play",
+    "pause": "Pause",
+    "reset": "Reset",
+    "stepForward": "Step Forward",
+    "stepBackward": "Step Backward",
+    "speed": "Playback Speed",
+    "slow": "Slow",
+    "normal": "Normal",
+    "fast": "Fast",
+    "faster": "Very Fast"
+  },
+  "modal": {
+    "close": "Close",
+    "save": "Save Config",
+    "saveSuccess": "Configuration saved",
+    "saveFailed": "Save failed",
+    "provider": "Provider",
+    "model": "Model",
+    "apiKey": "API Key",
+    "baseUrl": "Base URL",
+    "optional": "Optional",
+    "algorithmMatrix": "Algorithm Matrix",
+    "codeStudio": "Code Generation",
+    "codeAdvice": "Generate complete algorithm implementations with AI configuration; local mode provides templates and project structure suggestions.",
+    "shortcutsHelp": "Keyboard Shortcuts",
+    "apiConfig": "API Configuration",
+    "advancedOptions": "Advanced Options",
+    "testConnection": "Test Connection",
+    "testing": "Testing...",
+    "connectionSuccess": "Connection successful!",
+    "connectionFailed": "Connection failed",
+    "exportConfig": "Export Config",
+    "importConfig": "Import Config",
+    "apiKeyPlaceholder": "Enter your API Key",
+    "baseUrlPlaceholder": "e.g., https://api.openai.com/v1",
+    "temperature": "Temperature",
+    "maxTokens": "Max Tokens",
+    "apiKeyTip": "Your API Key is stored only in your local browser and will not be sent to our servers.",
+    "invalidApiKey": "Invalid API Key",
+    "invalidBaseUrl": "Base URL must start with http:// or https://",
+    "selectModel": "Please select a model"
+  },
+  "errors": {
+    "loadFailed": "Load failed",
+    "saveFailed": "Save failed",
+    "planFailed": "Plan failed",
+    "importFailed": "Import failed"
+  }
+}

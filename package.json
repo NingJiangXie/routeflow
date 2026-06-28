@@ -1,0 +1,72 @@
+{
+  "name": "routeflow",
+  "version": "2.3.0",
+  "private": true,
+  "description": "RouteFlow - Intelligent path planning visualization and AI assistant",
+  "type": "module",
+  "author": "RouteFlow Team",
+  "license": "MIT",
+  "homepage": "https://github.com/routeflow/routeflow",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/routeflow/routeflow.git"
+  },
+  "scripts": {
+    "dev": "vite --config vite.config.js",
+    "dev:host": "vite --config vite.config.js --host",
+    "start:all": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-routeflow.ps1",
+    "stop:all": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/stop-routeflow.ps1",
+    "build": "vite build --config vite.config.js",
+    "build:prod": "vite build --config vite.config.js --mode production",
+    "preview": "vite preview --config vite.config.js",
+    "preview:prod": "vite preview --config vite.config.js --mode production",
+    "lint": "eslint web/src --ext .js,.jsx --max-warnings=0",
+    "lint:fix": "eslint web/src --ext .js,.jsx --fix",
+    "lint:staged": "eslint --max-warnings=0",
+    "format": "prettier --write \"web/src/**/*.{js,jsx,css,json,md}\"",
+    "format:check": "prettier --check \"web/src/**/*.{js,jsx,css,json,md}\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "smoke:planning": "node scripts/planning-smoke.mjs",
+    "smoke:visual": "node scripts/visual-smoke.mjs",
+    "audit": "npm audit --audit-level=moderate",
+    "audit:fix": "npm audit fix",
+    "clean": "rm -rf web/dist web/node_modules/.vite .vitest coverage"
+  },
+  "dependencies": {
+    "i18next": "^23.7.6",
+    "lucide-react": "^0.294.0",
+    "ogl": "^1.0.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^14.0.0",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "jsdom": "^29.1.1",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "vite": "^5.0.8",
+    "vitest": "^4.1.9"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

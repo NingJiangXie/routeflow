@@ -1,0 +1,42 @@
+# Git
+.git
+.gitignore
+
+# Documentation
+*.md
+!README.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode
+.idea
+
+# Dependencies - build from package files instead
+web/node_modules
+api/__pycache__
+*.pyc
+*.pyo
+
+# Environment files
+.env
+.env.*
+*.pem
+*.key
+
+# Logs
+*.log
+logs/
+
+# Testing
+.pytest_cache
+.vitest
+coverage
+
+# Build artifacts
+dist
+build
+.runs
+.r2

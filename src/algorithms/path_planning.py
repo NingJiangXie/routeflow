@@ -1,6 +1,6 @@
 """
 Python Path Planning Algorithms - Optimized Version
-D* Lite, RRT*, ACO, HCFA - all implemented in Python
+D* Lite, RRT*, ACO - all implemented in Python
 """
 
 import numpy as np
@@ -377,69 +377,6 @@ class ACO(BaseAlgorithm):
         return PlanningResult(True, best_path, time.time()-start_time, best_length, len(best_path), "ACO")
 
 
-class HCFA(BaseAlgorithm):
-    """Hybrid Collaborative Fusion Algorithm"""
-    
-    def __init__(self, grid_map: np.ndarray = None):
-        super().__init__(grid_map)
-        self._parameters = {
-            "allow_diagonal": True
-        }
-    
-    def heuristic(self, a: Tuple[int, int], b: Tuple[int, int]) -> float:
-        return math.hypot(a[0] - b[0], a[1] - b[1])
-    
-    def plan(self, grid_map: np.ndarray, start: Tuple[int, int], goal: Tuple[int, int]) -> PlanningResult:
-        start_time = time.time()
-        
-        self.grid = grid_map
-        self.rows, self.cols = grid_map.shape
-        
-        start_f = start
-        goal_f = goal
-        
-        g_score = {start_f: 0.0}
-        f_score = {start_f: self.heuristic(start_f, goal_f)}
-        open_set = [(f_score[start_f], start_f)]
-        came_from = {}
-        
-        for _ in range(50000):
-            if not open_set:
-                break
-                
-            current_f, current = min(open_set, key=lambda x: x[0])
-            open_set.remove((current_f, current))
-            
-            if current == goal_f:
-                path = []
-                curr = current
-                while curr in came_from:
-                    path.append(curr)
-                    curr = came_from[curr]
-                path.append(start_f)
-                path.reverse()
-                
-                length = sum(math.hypot(p[0]-path[i+1][0], p[1]-path[i+1][1]) 
-                           for i,p in enumerate(path[:-1]))
-                
-                return PlanningResult(True, path, time.time()-start_time, length, len(path), "HCFA")
-                
-            for dr, dc in [(-1,0), (1,0), (0,-1), (0,1), (-1,-1), (-1,1), (1,-1), (1,1)]:
-                nr, nc = current[0]+dr, current[1]+dc
-                if 0<=nr<self.rows and 0<=nc<self.cols and self.grid[nr,nc]==0:
-                    neighbor = (nr, nc)
-                    tentative_g = g_score[current] + (1.414 if dr !=0 and dc !=0 else 1.0)
-                    
-                    if neighbor not in g_score or tentative_g < g_score[neighbor]:
-                        came_from[neighbor] = current
-                        g_score[neighbor] = tentative_g
-                        f = tentative_g + self.heuristic(neighbor, goal_f)
-                        f_score[neighbor] = f
-                        open_set.append((f, neighbor))
-                        
-        return PlanningResult(False, [], time.time()-start_time, 0, 0, "HCFA")
-
-
 class PathPlanner:
     """Unified path planner interface"""
     
@@ -447,14 +384,12 @@ class PathPlanner:
         1: DStarLite,
         2: RRTStar,
         3: ACO,
-        4: HCFA
     }
     
     ALGO_NAMES = {
         1: "D* Lite",
         2: "RRT*",
         3: "ACO",
-        4: "HCFA"
     }
     
     @staticmethod
